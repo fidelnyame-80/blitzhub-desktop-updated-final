@@ -1,0 +1,158 @@
+/* Universal reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: white; /* Consistent background with navbar */
+    color: #333; /* Text color for readability */
+  }
+  
+  /* Header styles */
+  header {
+    background-color: white; /* Matches the body background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    position: sticky; /* Ensures header stays at the top */
+    top: 0;
+    z-index: 10; /* Keeps header above other elements */
+    display: flex;
+    justify-content: flex-end; /* Pushes the nav to the right */
+  }
+  
+  header .main-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+    font-size: 1.2rem;
+  }
+  
+  header .main-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  header .main-menu ul li a:hover {
+    color: #007BFF; /* Highlight color on hover */
+  }
+  
+  header .main-menu ul li a.active {
+    color: #D9534F; /* Active menu item color */
+  }
+  
+  /* Container for grid layout */
+  .container {
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    max-width: 90vw; /* Limit content width */
+    margin: 0 auto; /* Center the container */
+    padding: 2rem 0;
+  }
+  
+  /* Grid layout */
+  .grid {
+    display: grid;
+    grid-template-columns: 50% 50%; /* Two equal columns */
+    grid-template-rows: auto;
+    gap: 2rem; /* Add spacing between grid items */
+  }
+  
+  .grid-item, .grid-item2 {
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Text styles for contact information */
+  .grid-item h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .grid-item p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+  
+  .grid-item ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .grid-item ul li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .grid-item ul li a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .grid-item ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contact form styles */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-form label {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form textarea {
+    resize: none;
+  }
+  
+  .contact-form .submit-button {
+    padding: 0.8rem 1.5rem;
+    background-color: #D9534F; /* Button color */
+    color: white; /* White text */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form .submit-button:hover {
+    background-color: #C9302C; /* Darker color on hover */
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #555;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 90vw;
+  }

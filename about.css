@@ -1,0 +1,201 @@
+/* Universal reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: white; /* Consistent background with navbar */
+    color: #333; /* Text color for readability */
+  }
+  
+  /* Header styles */
+  header {
+    background-color: white; /* Matches the body background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    position: sticky; /* Ensures header stays at the top */
+    top: 0;
+    z-index: 10; /* Keeps header above other elements */
+    display: flex;
+    justify-content: flex-end; /* Pushes the nav to the right */
+  }
+  
+  header .main-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+    font-size: 1.2rem;
+  }
+  
+  header .main-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  header .main-menu ul li a:hover {
+    color: #007BFF; /* Highlight color on hover */
+  }
+  
+  /* Container for grid and overlay */
+  .container {
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    height: 80vh; /* 80% of viewport height */
+    overflow: hidden; /* Prevents content from spilling outside */
+  }
+  
+  /* Grid styles */
+  .grid {
+    display: grid;
+    grid-template-columns: 50% 50%; /* Two equal columns */
+    grid-template-rows: 1fr; /* Single row */
+    width: 100%;
+    height: 100%;
+  }
+  
+  .grid-item img,
+  .grid-item2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the container without distortion */
+  }
+  
+  /* Overlay text styles */
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff; /* White text for contrast */
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    z-index: 5; /* Ensures overlay stays on top */
+  }
+  
+  /* Heritage section styles */
+  .about-section, .about-details {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    text-align: center;
+    padding: 2rem 5%; /* Spacing around the section */
+    max-width: 90vw; /* Restrict content width to 90% of viewport */
+    margin: 0 auto; /* Center the section */
+  }
+
+  
+  .about-section h2,
+  .about-details h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-section p,
+  .about-details p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+  
+  .about-section img,
+  .about-details img {
+    width: 100%;
+    max-width: 600px; /* Limit max width of images */
+    max-height: 500px;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* CTA section styles */
+  .cta-section {
+    text-align: center;
+    padding: 2rem 5%;
+    background-color: #f9f9f9;
+    max-width: 90vw; /* Restrict content width to 90% of viewport */
+    margin: 0 auto; /* Center the section */
+  }
+  
+  .cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-section a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #D9534F; /* Darker red button */
+    color: white; /* White text */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-section a:hover {
+    background-color: #C9302C; /* Even darker red on hover */
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #555;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  /* About Us Page Section Styles */
+.about-details {
+    padding: 2rem 5%;
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+  
+  .about-section {
+    margin-bottom: 2rem;
+  }
+  
+  .about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .about-section ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .about-section ul li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-section ul li strong {
+    color: #D9534F; /* Accent color for values */
+  }
